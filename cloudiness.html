@@ -4,12 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Latitude vs. Cloudiness</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <!-- Boostrap Stylesheet on the web-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Boostrap Stylesheet in the ASSETS folder-->
+    <link rel="stylesheet" href="Assets/bootstrap.css" media="screen">
+    <!-- CSS Stylesheet in the ASSETS folder-->
+    <link rel="stylesheet" href="Assets/style.css" media="screen">
 </head>
 
 <body>
+    <!-- Create navigation bar, and put links inside it for comparison, data, and the four viz pages -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Latitude vs. Cloudiness</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -29,7 +34,7 @@
                     <div class="dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
+                            Plot
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
@@ -43,6 +48,7 @@
         </div>
     </nav>
 
+    <!-- Master picture and paragraph describing the weatherPy project -->
     <div class="container">
         <div class="jumbotron">
             <h1 class="display-4">Summary: Latitude vs. Cloudiness</h1>
@@ -53,18 +59,21 @@
                 </div>
                 <div class="col-md-6">
                     <p>Our data suggests there is little correlation between latitude and cloudiness.</p>
-                    <p>Correlation was minimal in both Northern and Southern hemispheres, though it was slightly
-                        stronger in the South, as evident from the R-values of our linear regression.</p>
+                    <p>The scatter plot helps visualize that there is weak correlation, as the data doesn't appear to
+                        strongly cluster around the line of best fit.</p>
                 </div>
             </div>
         </div>
     </div>
 
+
+    <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    <!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
 </body>
 
